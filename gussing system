@@ -1,0 +1,23 @@
+import random #by importing random we can generate random numbers
+
+target =random.randint(1,100) #here we can generate random no b/w 1 to 100
+
+while True:
+    user_choice = int(input("guess the target or QUIT(Q)"))
+    
+    if(user_choice == "QUIT"):
+        break
+    
+    if(user_choice == target):
+        print("success... : correct guess")
+        break
+    
+    elif(user_choice < target):
+        print(" your guess is very low .... : take a bigger guess")
+    
+    else:
+         print(" your guess is very high .... : take a lower guess")
+        
+        
+print("------- GAME OVER------")
+    

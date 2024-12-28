@@ -1,0 +1,29 @@
+import random
+
+import string #it contains all ascii values
+
+password_length = 12
+
+char_values = string.ascii_letters + string.digits + string.punctuation
+
+password = ""
+
+for i in range (password_length):
+    
+    password_length += print(random.choice(char_values))
+    
+    print("your password is... :", password)
+    
+    
+#or
+import random
+
+import string #it contains all ascii values
+
+password_length = 12
+
+char_values = string.ascii_letters + string.digits + string.punctuation
+
+password = "".join ([ random.choice(char_values) for i in range (password_length)])
+    
+print("your password is... :", password)
